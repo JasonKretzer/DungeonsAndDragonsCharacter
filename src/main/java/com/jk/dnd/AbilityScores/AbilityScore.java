@@ -5,12 +5,10 @@ import com.jk.dnd.AbilityScores.AbilityScoreTypes.Score;
 public class AbilityScore {
     private Score scoreType;
     private int score;
-    private int modifier;
-
-    public AbilityScore(Score scoreType, int score, int modifier) {
+    
+    public AbilityScore(Score scoreType, int score) {
         this.scoreType = scoreType;
         this.score = score;
-        this.modifier = modifier;
     }
 
     public Score getScoreType() {
@@ -30,10 +28,11 @@ public class AbilityScore {
     }
 
     public int getModifier() {
-        return modifier;
+        return calculateModifier();
     }
 
-    public void setModifier(int modifier) {
-        this.modifier = modifier;
+    private int calculateModifier()
+    {
+        return 0;
     }
 }

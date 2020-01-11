@@ -4,9 +4,9 @@ import com.jk.dnd.AbilityScores.AbilityScoreTypes.Score;
 
 public class Intelligence extends AbilityScore
 {
-    public Intelligence(int score, int modifier)
+    public Intelligence(int score)
     {
-        super(Score.INTELLIGENCE, score, modifier);
+        super(Score.INTELLIGENCE, score);
     }
 
     @Override

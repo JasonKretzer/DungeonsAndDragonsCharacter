@@ -4,9 +4,9 @@ import com.jk.dnd.AbilityScores.AbilityScoreTypes.Score;
 
 public class Dexterity extends AbilityScore 
 {
-    public Dexterity(int score, int modifier)
+    public Dexterity(int score)
     {
-        super(Score.DEXTERITY, score, modifier);
+        super(Score.DEXTERITY, score);
     }
 
     @Override

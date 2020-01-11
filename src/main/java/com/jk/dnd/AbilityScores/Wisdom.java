@@ -2,16 +2,16 @@ package com.jk.dnd.AbilityScores;
 
 import com.jk.dnd.AbilityScores.AbilityScoreTypes.Score;
 
-public class Charisma extends AbilityScore 
+public class Wisdom extends AbilityScore 
 {
-    public Charisma(int score, int modifier)
+    public Wisdom(int score)
     {
-        super(Score.CHARISMA, score, modifier);
+        super(Score.WISDOM, score);
     }
 
     @Override
     public String toString()
     {
-        return "Charisma";
+        return "Wisdom";
     }
 }

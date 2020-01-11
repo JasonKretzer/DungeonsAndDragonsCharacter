@@ -2,16 +2,16 @@ package com.jk.dnd.AbilityScores;
 
 import com.jk.dnd.AbilityScores.AbilityScoreTypes.Score;
 
-public class Strength extends AbilityScore
+public class Constitution extends AbilityScore 
 {
-    public Strength(int score, int modifier)
+    public Constitution(int score)
     {
-        super(Score.STRENGTH, score, modifier);
+        super(Score.CONSTITUTION, score);
     }
 
     @Override
     public String toString()
     {
-        return "Strength";
+        return "Constitution";
     }
 }

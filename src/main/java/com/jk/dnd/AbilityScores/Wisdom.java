@@ -1,12 +1,12 @@
 package com.jk.dnd.AbilityScores;
 
-import com.jk.dnd.AbilityScores.AbilityScoreTypes.Score;
+import com.jk.dnd.AbilityScores.AbilityScoreTypes.ScoreOption;
 
 public class Wisdom extends AbilityScore 
 {
     public Wisdom(int score)
     {
-        super(Score.WISDOM, score);
+        super(ScoreOption.WISDOM, score);
     }
 
     @Override

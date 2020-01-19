@@ -1,21 +1,26 @@
 package com.jk.dnd.AbilityScores;
 
-import com.jk.dnd.AbilityScores.AbilityScoreTypes.Score;
+import java.util.HashMap;
+import java.util.UUID;
 
-public class AbilityScore {
-    private Score scoreType;
+import com.jk.dnd.AbilityScores.AbilityScoreTypes.ScoreOption;
+
+public class AbilityScore 
+{
+    private ScoreOption scoreType;
     private int score;
+    private HashMap<UUID, AbilityModifier> modifiers;
     
-    public AbilityScore(Score scoreType, int score) {
+    public AbilityScore(ScoreOption scoreType, int score) {
         this.scoreType = scoreType;
         this.score = score;
     }
 
-    public Score getScoreType() {
+    public ScoreOption getScoreType() {
         return scoreType;
     }
 
-    public void setScoreType(Score scoreType) {
+    public void setScoreType(ScoreOption scoreType) {
         this.scoreType = scoreType;
     }
 
@@ -35,4 +40,12 @@ public class AbilityScore {
     {
         return 0;
     }
+
+	public ArrayList<AbilityModifier> getModifiers() {
+		return modifiers;
+	}
+
+	public void addModifier(AbilityModifier modifier) {
+		this.modifiers.add(modifier);
+	}
 }

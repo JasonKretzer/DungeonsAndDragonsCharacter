@@ -2,7 +2,7 @@ package com.jk.dnd.AbilityScores;
 
 public class AbilityScoreTypes
 {
-    public static enum Score {
+    public static enum ScoreOption {
         STRENGTH,
         INTELLIGENCE,
         WISDOM,

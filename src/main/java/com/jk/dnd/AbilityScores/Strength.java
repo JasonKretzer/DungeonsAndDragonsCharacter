@@ -1,12 +1,12 @@
 package com.jk.dnd.AbilityScores;
 
-import com.jk.dnd.AbilityScores.AbilityScoreTypes.Score;
+import com.jk.dnd.AbilityScores.AbilityScoreTypes.ScoreOption;
 
 public class Strength extends AbilityScore
 {
     public Strength(int score)
     {
-        super(Score.STRENGTH, score);
+        super(ScoreOption.STRENGTH, score);
     }
 
     @Override

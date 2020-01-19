@@ -1,12 +1,12 @@
 package com.jk.dnd.AbilityScores;
 
-import com.jk.dnd.AbilityScores.AbilityScoreTypes.Score;
+import com.jk.dnd.AbilityScores.AbilityScoreTypes.ScoreOption;
 
 public class Constitution extends AbilityScore 
 {
     public Constitution(int score)
     {
-        super(Score.CONSTITUTION, score);
+        super(ScoreOption.CONSTITUTION, score);
     }
 
     @Override

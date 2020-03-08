@@ -29,6 +29,6 @@ public class CharacterAbilityScoreManager
 		default:
 			break;
 		}
-		return 0; //TODO
+		return 0;
 	}
 }

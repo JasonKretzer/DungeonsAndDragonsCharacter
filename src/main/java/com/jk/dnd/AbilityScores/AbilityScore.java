@@ -1,5 +1,6 @@
 package com.jk.dnd.AbilityScores;
 
+
 import java.util.HashMap;
 import java.util.UUID;
 
@@ -41,11 +42,11 @@ public class AbilityScore
         return 0;
     }
 
-	public ArrayList<AbilityModifier> getModifiers() {
+	public HashMap<UUID, AbilityModifier> getModifiers() {
 		return modifiers;
 	}
 
 	public void addModifier(AbilityModifier modifier) {
-		this.modifiers.add(modifier);
+		this.modifiers.put(UUID.randomUUID(), modifier);
 	}
 }
